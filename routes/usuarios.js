@@ -1,9 +1,9 @@
 import { Router } from 'express'
-import { param, body } from 'express-validator'
+import { body, param } from 'express-validator'
 
 import { usuariosController } from '../controllers/index.js'
 import { dbValidators } from '../helpers/index.js'
-import { validateFields, validateJWT, rolesValidate } from '../middlewares/index.js'
+import { rolesValidate, validateFields, validateJWT } from '../middlewares/index.js'
 
 const router = Router()
 
